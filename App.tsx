@@ -20,6 +20,7 @@ const LotsOfGreetings = () => {
    <View style={[styles.center, {top: 50}]}>
     <Greeting name= "Kirby"></Greeting>
     <Greeting name= "Django"></Greeting>
+    <Greeting name= "Ty4"></Greeting>
    </View>
   );
 };

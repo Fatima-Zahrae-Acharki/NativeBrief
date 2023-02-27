@@ -13,10 +13,45 @@ import {Text} from 'react-native';
 
 //class component
 
-class Kirby extends Component {
-  render() {
-    return <Text>Hello, I am Kirby.</Text>;
-  }
+// class Kirby extends Component {
+//   render() {
+//     return <Text>Hello, I am Kirby.</Text>;//JSX
+//   }
+// }
+
+
+
+//curly braces
+
+// const Kirby = () => {
+//   const secondName = 'Filo-san';
+//   return <Text>Hello, I am {secondName} !</Text>
+// }
+
+
+//typeScript vs JS
+
+//TS
+
+// const getFullName = (
+//   firstName: string,
+//   secondName: string,
+//   thirdName: string,
+// ) => {
+//   return firstName + ' ' + secondName + ' ' + thirdName;
+// };
+// const Kirby = () => {
+//   return <Text>Hello, I am {getFullName('Fatima', 'Zahrae', 'Acharki')} !</Text>
+// }
+
+//JS
+const getFullName = (firstName, secondName, thirdName) => {
+  return firstName + ' ' + secondName + ' ' + thirdName;
+};
+const Kirby = () => {
+  return <Text>Hello, I am {getFullName('Fatima', 'Zahrae', 'Acharki')} !</Text>
 }
+
+
 
 export default Kirby;

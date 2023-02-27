@@ -1,20 +1,39 @@
 import React from "react";
-import {Text, View} from 'react-native';
+import {Image, Text, View} from 'react-native';
 
-const HelloWorld = () => {
+// const Kirby = props => {
+//   return (
+//     <View>
+//       <Text>Hello, I am {props.name} !</Text>
+//     </View>
+//   );
+// };
+
+// const Cafe = () => {
+//   return (
+//     <View>
+//       <Kirby name='Lloyd' />
+//       <Kirby name='Yoru' />
+//       <Kirby name='Anya' />
+//     </View>
+//   );
+// };
+
+
+//using image
+
+const Cafe = () => {
   return(
-    <View 
-      style={{
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-      }} >
-    <Text>
-      Hello, World!
-    </Text>
-
+    <View>
+      <Image
+      source={{
+        uri: 'https://reactnative.dev/docs/assets/p_cat1.png',
+      }}
+      style={{width:200, height: 200}}
+        />
+      <Text>Hello, I am your cat !</Text>
     </View>
-  );
-};
+  )
+}
 
-export default HelloWorld;
+export default Cafe;

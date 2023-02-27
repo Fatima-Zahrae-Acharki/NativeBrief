@@ -67,15 +67,15 @@ import {Text, View} from 'react-native';
 //   );
 // };
 
-// const Cafe = () => {
-//   return (
-//     <View>
-//       <Text>Welcome !</Text>
-//       <Kirby />
-//       <Kirby />
-//     </View>
-//   )
-// }
+const Cafe = () => {
+  return (
+    <View>
+      <Text>Welcome !</Text>
+      <Kirby />
+      <Kirby />
+    </View>
+  )
+}
 
 
 

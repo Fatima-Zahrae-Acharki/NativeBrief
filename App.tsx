@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {Text, View} from 'react-native';
+import {Text, TextInput, View} from 'react-native';
 
 
 
@@ -67,19 +67,44 @@ import {Text, View} from 'react-native';
 //   );
 // };
 
-const Cafe = () => {
+// const Cafe = () => {
+//   return (
+//     <View>
+//       <Text>Welcome !</Text>
+//       <Kirby />
+//       <Kirby />
+//     </View>
+//   )
+// }
+
+
+
+// export default Cafe;
+
+
+
+
+
+
+//custom components
+
+const Cat = () => {
   return (
     <View>
-      <Text>Welcome !</Text>
-      <Kirby />
-      <Kirby />
+      <Text>Hello, I am...</Text>
+      <TextInput
+        style={{
+          height: 40,
+          borderColor: 'gray',
+          borderWidth: 1,
+        }}
+        defaultValue="Name me!"
+      />
     </View>
-  )
-}
+  );
+};
 
-
-
-export default Cafe;
+export default Cat;
 
 
 

@@ -1,20 +1,52 @@
 import React from "react";
-import {Text, View} from 'react-native';
+import {Image, ScrollView, Text} from 'react-native';
 
-const HelloWorld = () => {
-  return(
-    <View 
-      style={{
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-      }} >
-    <Text>
-      Hello, World!
-    </Text>
-
-    </View>
-  );
+const logo = {
+  uri: 'https://reactnative.dev/img/tiny_logo.png',
+  width: 64,
+  height: 64,
 };
 
-export default HelloWorld;
+const App = () => (
+  <ScrollView>
+    <Text style={{fontSize: 20,
+    alignSelf:'center'}}>Scroll me plz</Text>
+    <Image source={logo} />
+    <Image source={logo} />
+    <Image source={logo} />
+    <Image source={logo} />
+    <Image source={logo} />
+    <Text style={{fontSize: 20,
+    alignSelf:'center'}}>If you like</Text>
+    <Image source={logo} />
+    <Image source={logo} />
+    <Image source={logo} />
+    <Image source={logo} />
+    <Image source={logo} />
+    <Text style={{fontSize: 20,
+    alignSelf:'center'}}>Scrolling down</Text>
+    <Image source={logo} />
+    <Image source={logo} />
+    <Image source={logo} />
+    <Image source={logo} />
+    <Image source={logo} />
+    <Text style={{fontSize: 20,
+    alignSelf:'center'}}>What's the best</Text>
+    <Image source={logo} />
+    <Image source={logo} />
+    <Image source={logo} />
+    <Image source={logo} />
+    <Image source={logo} />
+    <Text style={{fontSize: 20,
+    alignSelf:'center'}}>Framework around?</Text>
+    <Image source={logo} />
+    <Image source={logo} />
+    <Image source={logo} />
+    <Image source={logo} />
+    <Image source={logo} />
+    <Text style={{fontSize: 20,
+    alignSelf:'center'}}>React Native</Text>
+  </ScrollView>
+);
+
+export default App;

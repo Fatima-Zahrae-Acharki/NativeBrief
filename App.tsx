@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {Text} from 'react-native';
+import {Text, View} from 'react-native';
 
 
 
@@ -45,13 +45,42 @@ import {Text} from 'react-native';
 // }
 
 //JS
-const getFullName = (firstName, secondName, thirdName) => {
-  return firstName + ' ' + secondName + ' ' + thirdName;
-};
-const Kirby = () => {
-  return <Text>Hello, I am {getFullName('Fatima', 'Zahrae', 'Acharki')} !</Text>
-}
+// const getFullName = (firstName, secondName, thirdName) => {
+//   return firstName + ' ' + secondName + ' ' + thirdName;
+// };
+// const Kirby = () => {
+//   return <Text>Hello, I am {getFullName('Fatima', 'Zahrae', 'Acharki')} !</Text>
+// }
+
+
+// export default Kirby;
 
 
 
-export default Kirby;
+// multiple components
+
+// const Kirby = () => { 
+//   return(
+//     <View>
+//       <Text>I am a Character !</Text>
+//     </View>
+//   );
+// };
+
+// const Cafe = () => {
+//   return (
+//     <View>
+//       <Text>Welcome !</Text>
+//       <Kirby />
+//       <Kirby />
+//     </View>
+//   )
+// }
+
+
+
+export default Cafe;
+
+
+
+

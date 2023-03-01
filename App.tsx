@@ -3,7 +3,7 @@ import {StyleSheet, Text, View} from 'react-native';
 
 
 
-//styles
+/////////////////////////styles
 
 // const LotsOfStyles = () => {
 //   return (
@@ -35,9 +35,10 @@ import {StyleSheet, Text, View} from 'react-native';
 
 
 
-//height and width
 
-//fixed dimentions
+/////////////////////////////////height and width
+
+//////fixed dimentions
 
 // const FixedDimentionsBasics = () => {
 //   return (
@@ -70,7 +71,7 @@ import {StyleSheet, Text, View} from 'react-native';
 // export default FixedDimentionsBasics;
 
 
-//flex dimentions
+//////flex dimentions
 
 // const FlexDimensionsBasics = () => {
 //   return (
@@ -88,33 +89,68 @@ import {StyleSheet, Text, View} from 'react-native';
 
 
 
-//percentage dimensions
+//////percentage dimensions
 
-const PercentageDimensionsBasics = () => {
+// const PercentageDimensionsBasics = () => {
+//   return (
+//     <View style={{height: '100%'}}>
+//       <View
+//         style={{
+//           height: '15%',
+//           backgroundColor: 'powderblue',
+//         }}
+//       />
+//       <View
+//         style={{
+//           width: '66%',
+//           height: '35%',
+//           backgroundColor: 'skyblue',
+//         }}
+//       />
+//       <View
+//         style={{
+//           width: '33%',
+//           height: '50%',
+//           backgroundColor: 'steelblue',
+//         }}
+//       />
+//     </View>
+//   );
+// };
+
+// export default PercentageDimensionsBasics;
+
+
+
+
+//////////////////////////////layout with flexbox
+
+
+//flex
+
+const Flex = () => {
   return (
-    <View style={{height: '100%'}}>
-      <View
-        style={{
-          height: '15%',
-          backgroundColor: 'powderblue',
-        }}
-      />
-      <View
-        style={{
-          width: '66%',
-          height: '35%',
-          backgroundColor: 'skyblue',
-        }}
-      />
-      <View
-        style={{
-          width: '33%',
-          height: '50%',
-          backgroundColor: 'steelblue',
-        }}
-      />
+    <View
+      style={[
+        styles.container,
+        {
+          //row will appear vertically
+          // flexDirection: 'row',
+          flexDirection: 'column',//horizontally
+        },
+      ]}>
+      <View style={{flex: 1, backgroundColor: 'pink'}} />
+      <View style={{flex: 2, backgroundColor: 'white'}} />
+      <View style={{flex: 3, backgroundColor: 'powderblue'}} />
     </View>
   );
 };
 
-export default PercentageDimensionsBasics;
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    padding: 20,
+  },
+});
+
+export default Flex;

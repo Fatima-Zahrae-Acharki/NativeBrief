@@ -72,16 +72,49 @@ import {StyleSheet, Text, View} from 'react-native';
 
 //flex dimentions
 
-const FlexDimensionsBasics = () => {
+// const FlexDimensionsBasics = () => {
+//   return (
+//     //if u remove the parent the children will disappear
+//     //if we add `height: 300` instead of `flex: 1` the height of the box will be 300
+//     <View style={{flex: 1}}>
+//       <View style={{flex: 1, backgroundColor: 'powderblue'}} />  
+//       <View style={{flex: 2, backgroundColor: 'skyblue'}} />
+//       <View style={{flex: 3, backgroundColor: 'steelblue'}} />
+//     </View>
+//   );
+// };
+
+// export default FlexDimensionsBasics;
+
+
+
+//percentage dimensions
+
+const PercentageDimensionsBasics = () => {
   return (
-    //if u remove the parent the children will disappear
-    //if we add `height: 300` instead of `flex: 1` the height of the box will be 300
-    <View style={{flex: 1}}>
-      <View style={{flex: 1, backgroundColor: 'powderblue'}} />  
-      <View style={{flex: 2, backgroundColor: 'skyblue'}} />
-      <View style={{flex: 3, backgroundColor: 'steelblue'}} />
+    <View style={{height: '100%'}}>
+      <View
+        style={{
+          height: '15%',
+          backgroundColor: 'powderblue',
+        }}
+      />
+      <View
+        style={{
+          width: '66%',
+          height: '35%',
+          backgroundColor: 'skyblue',
+        }}
+      />
+      <View
+        style={{
+          width: '33%',
+          height: '50%',
+          backgroundColor: 'steelblue',
+        }}
+      />
     </View>
   );
 };
 
-export default FlexDimensionsBasics;
+export default PercentageDimensionsBasics;
